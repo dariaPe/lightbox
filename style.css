@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 5% 5% 35%;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #fff 0%, #fff 50%, #000 50%, #000 100%);
+    flex-wrap: wrap;
+   
+}
+
+h3 {
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+    color: yellow;
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding: 0px 15px;
+    line-height: 70px;  
+}
+
+
+.gallery .h3first {
+    top: 5%;
+    left: 5%;
+}
+
+
+.gallery a{
+	box-shadow: 0 0 2px 1px grey;
+	flex-basis: 26%;
+	margin:1.5%;
+}
+.gallery img{
+	display:block;
+	width:100%;
+}
+
+/*rwd*/
+@media only screen and (max-width: 500px) {
+    h3{
+        font-size: 30px;
+    }
+    .gallery{
+    padding: 0;
+    align-content: center;
+   }
+
+
+}
+@media only screen and (max-width: 900px) {
+   h3{
+        font-size: 30px;   
+    }
+    section{
+        padding: 15% 5% 5% 5%;
+    }
+    .gallery{
+    align-content: center;
+   }
+   
+   
+
+}
